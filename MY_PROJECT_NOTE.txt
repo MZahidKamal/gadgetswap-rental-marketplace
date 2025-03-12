@@ -10,7 +10,7 @@ git push -u origin main
 // Commands to push code from now on.-----------------------------------------------------------------------------------
 
 git add .
-git commit -m "COMMIT MESSAGE."
+git commit -m "README file added with project proposal."
 git push
 
 // Necessary Git commands.----------------------------------------------------------------------------------------------
