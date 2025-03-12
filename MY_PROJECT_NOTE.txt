@@ -1,0 +1,51 @@
+// Primary set of commands for initializing the git repository.---------------------------------------------------------
+
+git init
+git add .
+git commit -m "Project setup completed using Vite React ReactRouter and TailwindCSS."
+git branch -M main
+git remote add origin https://github.com/MZahidKamal/gadgetswap-rental-marketplace.git
+git push -u origin main
+
+// Commands to push code from now on.-----------------------------------------------------------------------------------
+
+git add .
+git commit -m "COMMIT MESSAGE."
+git push
+
+// Necessary Git commands.----------------------------------------------------------------------------------------------
+
+[git branch]                            To know the current branch.
+[git branch -M newName]                 To rename the current branch.
+[git remote -v]                         To get the original url where the git will be pushed and be fetched from.
+[git branch newBranchName]              To create a new branch.
+[git checkout newBranchName]            To check out from current branch and enter into newBranchName.
+[git branch -d newBranchName]           To delete the newBranchName. Make sure you are not currently in this branch.
+[git checkout -b newBranchName02]       To check out from current branch, create a new branch and enter into that new branch.
+git push origin newBranchName02
+
+// Instructions for team members.---------------------------------------------------------------------------------------
+
+Login to your own GitHub profile.
+Visit this project repository [https://github.com/MZahidKamal/Gadgets-Rental---Client-Side.git].
+Click 'Fork' just above the About section.
+Keep everything same, and then click 'Create fork' button in the bottom right corner.
+Now you will see a copy of this project into your own GitHub profile.
+
+Clone the repository, using the HTTPS web URL, into your local folder.
+Open the project in your VSCode.
+Run the command [npm install] to install all the packages according to the package.json file.
+Run the project. Hopefully everything will be perfect.
+
+Now open the terminal.
+[git checkout -b newFeatureNameAsBranchName] To check out from current branch, create a new branch and enter into that new branch.
+Write necessary code to implement the feature.
+
+[git add .] To add the new code into the git push pipeline.
+[git commit -am "Commit text"] To add the commit text about the added new code, into the new branch, of the repository which .
+[git push origin newFeatureNameAsBranchName] To push the new code into the repository, which you have forked into your GitHub account.
+
+Now got to your forked repository,
+
+// Firebase setup ------------------------------------------------------------------------------------------------------
+
