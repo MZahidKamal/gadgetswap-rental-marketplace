@@ -5,7 +5,6 @@ import ProductsComponent from "../../Components/ProductsComponent/ProductsCompon
 const HomePage = () => {
     return (
         <div className={'text-5xl font-bold'}>
-            HomePage
             <BannerComponent></BannerComponent>
             <ProductsComponent></ProductsComponent>
         </div>
