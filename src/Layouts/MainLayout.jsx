@@ -6,7 +6,9 @@ import {Outlet} from "react-router";
 const MainLayout = () => {
     return (
         <div className={'container mx-auto'}>
+            <div className='mb-20'>
             <NavbarComponent></NavbarComponent>
+            </div>
             <Outlet></Outlet>
             <FooterComponent></FooterComponent>
         </div>
