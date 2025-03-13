@@ -4,6 +4,9 @@ const SignUpPage = () => {
     return (
         <div>
             SignUpPage
+            SignUpPage
+            SignUpPage
+            SignUpPage
         </div>
     );
 };
