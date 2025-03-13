@@ -4,6 +4,9 @@ const BannerComponent = () => {
     return (
         <div>
             BannerComponent
+            BannerComponent
+            BannerComponent
+            BannerComponent
         </div>
     );
 };
