@@ -29,9 +29,6 @@ const CategoryComponent = () => {
         ? productsData 
         : productsData.filter((product) => product.categoryId === activeCategory);
 
-    console.log("Active Category:", activeCategory);
-    console.log("Filtered Products:", filteredProducts); // Debug filtered products
-
     // Paginate products
     const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
     const startIndex = (currentPage - 1) * itemsPerPage;
@@ -46,12 +43,12 @@ const CategoryComponent = () => {
         <section className="bg-gray-100 py-6">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Horizontally Scrollable Buttons */}
-                <div className="flex">
-                    <h2 className="text-gray-700">Categories:</h2>
-                    <div className="flex overflow-x-auto space-x-4 scrollbar-hide py-2 px-2">
+                <div className="flex flex-wrap justify-start items-center mb-4">
+                    <h2 className="text-gray-700 text-lg md:text-xl mr-4">Categories:</h2>
+                    <div className="flex overflow-x-auto space-x-4 py-2 px-2">
                         {/* "All Categories" button */}
                         <button
-                            className="flex items-center h-10 w-40 space-x-2 px-3 py-1 text-xs rounded-md text-white bg-gray-500 shadow-md hover:opacity-80 whitespace-nowrap"
+                            className="flex items-center h-10 w-32 md:w-40 space-x-2 px-3 py-1 text-xs md:text-sm rounded-md text-white bg-gray-500 shadow-md hover:opacity-80 whitespace-nowrap"
                             onClick={() => setActiveCategory(null)}
                         >
                             <span>All Categories</span>
@@ -61,7 +58,7 @@ const CategoryComponent = () => {
                         {categoriesData.map((category) => (
                             <button
                                 key={category.id}
-                                className={`flex items-center h-10 w-40 space-x-2 px-3 py-1 text-xs rounded-md text-white ${category.color} shadow-md hover:opacity-80 whitespace-nowrap`}
+                                className={`flex items-center h-10 w-32 md:w-40 space-x-2 px-3 py-1 text-xs md:text-sm rounded-md text-white ${category.color} shadow-md hover:opacity-80 whitespace-nowrap`}
                                 onClick={() => setActiveCategory(category.id)}
                             >
                                 {iconMap[category.icon]} {/* Display icon based on the icon name */}
@@ -72,7 +69,7 @@ const CategoryComponent = () => {
                 </div>
 
                 {/* Display Products for the selected category */}
-                <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                     {paginatedProducts.map((product) => (
                         <div key={product.id} className="bg-white p-4 rounded-lg shadow-md">
                             <img src={product.image} alt={product.name} className="w-full h-48 object-cover mb-4" />
@@ -117,7 +114,6 @@ const CategoryComponent = () => {
                         Next
                     </button>
                 </div>
-
             </div>
         </section>
     );
