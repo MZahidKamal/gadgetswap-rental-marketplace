@@ -7,7 +7,9 @@ const MainLayout = () => {
     return (
         <div className={'container mx-auto'}>
            
-            <NavbarComponent></NavbarComponent>
+          <div className='mb-[64px]'>
+          <NavbarComponent></NavbarComponent>
+          </div>
           
             <Outlet></Outlet>
             <FooterComponent></FooterComponent>

@@ -10,9 +10,9 @@ const NavbarComponent = () => {
                 <div className="flex justify-between items-center py-4">
 
                     {/* Website Title & Search Bar */}
-                    <div className="flex items-center space-x-4">
+                    <div className="flex items-center lg:space-x-4 space-x-1">
                         <h1 className="text-2xl font-bold text-white">GadgetSwap</h1>
-                        <div className="relative w-60 mx-3">
+                        <div className="relative w-44 lg:w-60 mx-3">
                             <input
                                 type="text"
                                 placeholder="Search gadgets..."
@@ -41,7 +41,7 @@ const NavbarComponent = () => {
                     </ul>
 
                     {/* Buttons */}
-                    <div className="flex items-center space-x-2">
+                    <div className="lg:flex hidden items-center space-x-2">
                         <button className="btn btn-outline bg-blue-300 px-4 py-2 rounded-xl">Sign Up</button>
                         <span className="text-gray-500">or</span>
                         <button className="btn btn-primary bg-emerald-300 px-4 py-2 rounded-xl">Sign In</button>
