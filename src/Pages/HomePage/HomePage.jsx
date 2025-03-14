@@ -1,12 +1,12 @@
 import React from 'react';
 import BannerComponent from "../../Components/BannerComponent/BannerComponent.jsx";
-import ProductsComponent from "../../Components/ProductsComponent/ProductsComponent.jsx";
+import CategoryComponent from '../../Components/HomePageComponent/CategoryComponent/CategoryComponent.jsx';
 
 const HomePage = () => {
     return (
         <div className={'text-5xl font-bold'}>
             <BannerComponent></BannerComponent>
-            <ProductsComponent></ProductsComponent>
+            <CategoryComponent></CategoryComponent>
         </div>
     );
 };
