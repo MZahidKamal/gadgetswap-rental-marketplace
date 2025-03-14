@@ -1,15 +1,13 @@
 import React from 'react';
 import NavbarComponent from "../Components/NavbarComponent/NavbarComponent.jsx";
 import FooterComponent from "../Components/FooterComponent/FooterComponent.jsx";
-import {Outlet} from "react-router";
+import { Outlet } from "react-router";
 
 const MainLayout = () => {
     return (
         <div className={'container mx-auto'}>
            
-          <div className='mb-[64px]'>
-          <NavbarComponent></NavbarComponent>
-          </div>
+            <NavbarComponent></NavbarComponent>
           
             <Outlet></Outlet>
             <FooterComponent></FooterComponent>

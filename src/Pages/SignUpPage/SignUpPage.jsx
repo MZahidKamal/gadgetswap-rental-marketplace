@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { Link } from 'react-router';
+import signUpLottie from '../../assets/Lottie/signUp.json'
+import Lottie from 'lottie-react';
 
 const SignUpPage = () => {
 
@@ -69,9 +71,10 @@ const SignUpPage = () => {
 
                     <button className='w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300 mb-3'>Continue with Google</button>
 
-                    <p className='text-center'>Already have an account? <Link className='text-blue-700 underline' to="/sign-in">sign-in</Link></p>
+                    <p className='text-center'>Already have an account? <Link className='text-blue-700 underline' to="/sign-in">Sign-in</Link></p>
                 </form>
             </div>
+            <Lottie animationData={signUpLottie}></Lottie>
         </div>
     );
 };
